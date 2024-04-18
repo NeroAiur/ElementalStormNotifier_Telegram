@@ -1,6 +1,18 @@
 def parse_html(html):
+    import json
     from bs4 import BeautifulSoup
-    website_active_storms_list = ["EU-group-elemental-storms-line-0", "EU-group-elemental-storms-line-1"]   # relevant list-items
+    
+    with open("assets\\config.json") as f:
+        region = json.load(f)["region"]
+        
+    if region == "EU":
+        website_active_storms_list = ["EU-group-elemental-storms-line-0", "EU-group-elemental-storms-line-1"]
+    elif region == "US":
+        website_active_storms_list = ["US-group-elemental-storms-line-0", "US-group-elemental-storms-line-1"]
+    else:
+        print("ERROR - Unsupported region in config file!\nPlease look up if there is typo (supported configs are 'EU' and 'US').\nIf a region is unsupported, please contact the dev.")
+        return -1
+    
     active_storms = []
     
     # initiates bs4 to parse the html
@@ -38,8 +50,11 @@ def parse_html(html):
                         element = "Earth"
                     else:
                         element = "Unkown"
+                        
                 this_storm = [zone, element, remaining_time]
-                
                 active_storms.append(this_storm)
                    
     return active_storms
+
+if __name__ == "__main__":
+    parse_html("test")

@@ -1,0 +1,11 @@
+{
+    "region": "EU",
+    "Telegram-API-token": "YOUR TOKEN COMES HERE",
+    "Telegram-Target-Chat": "YOUR CHAT ID COMES HERE",
+
+    "message-header": "Elemental Storm Tracker - Currently Active Storms\n\n",
+    "message-header-error": "Elemental Storm Tracker - ERROR\n\n",
+    "message-body": "     Zone: {zone}\n     Element: {element}\n     Time Remaining: {time_remaining}\n\n",
+    "message-body-storm-needed": "Storm needed for achievement!\n",
+    "message-body-error-config-error": "There was an error with the content of the config file!\nMost likely there is a typo in the region attribute. Please check the config file."
+}
