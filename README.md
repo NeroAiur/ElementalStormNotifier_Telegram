@@ -46,9 +46,3 @@ You can also edit the message headers and bodys to your liking, for that just he
 * at the very end of the file add the following: `5 */3 * * * sh /path/to/run.sh` (5min after the full hour because of potential delays)
 * press `CTRL + S` and `CTRL + X`
 * done
-
-
-# To-Do
-* setup-script
-    * [] Telegram
-    * [] Discord
