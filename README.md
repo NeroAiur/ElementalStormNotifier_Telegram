@@ -1,8 +1,8 @@
 # wowhead_storm_scraper
 This project came from my absolute lazyness that I did not want to open my webbrowser every 3 hours to look up which Elemental Storm is active... So yes, this script does look up what storm currently is active...
 
-**THIS IS THE TELEGRAM-VERSION**\
-Link to the Discord Version:\
+**THIS IS THE TELEGRAM-VERSION, ALSO I WILL NOT UPDATE THIS ANY FURTHER**\
+Link to the Discord Version (that is also up to date):\
 https://github.com/NeroAiur/ElementalStormNotifier_Discord
 
 
